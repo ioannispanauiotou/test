@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Επικοινωνία & Αίτημα Προσφοράς | Λατομείο Θίσβης</title>
+  <meta name="description" content="Επικοινωνήστε με το Λατομείο Θίσβης για άμεση προσφορά αδρανών υλικών στη Βοιωτία και ευρύτερα.">
+  <link rel="canonical" href="https://example.github.io/contact.html"> <!-- CHANGE HERE -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Επικοινωνία | Λατομείο Θίσβης">
+  <meta property="og:description" content="Τηλέφωνο, email και φόρμα αιτήματος προσφοράς για αδρανή υλικά.">
+  <meta property="og:url" content="https://example.github.io/contact.html">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ContactPage",
+    "name":"Επικοινωνία Λατομείου Θίσβης",
+    "url":"https://example.github.io/contact.html"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Αρχική"><span>Λατομείο Θίσβης</span></a> <!-- CHANGE HERE -->
+      <button class="nav-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+        <ul>
+          <li><a href="index.html">Αρχική</a></li>
+          <li><a href="products.html">Προϊόντα</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary header-cta" href="#quote">Ζητήστε Προσφορά</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Επικοινωνία</h1>
+      <div class="contact-grid">
+        <section class="card">
+          <h2>Στοιχεία Επικοινωνίας</h2>
+          <p><strong>Επωνυμία:</strong> Λατομείο Θίσβης</p> <!-- CHANGE HERE -->
+          <p><strong>Διεύθυνση:</strong> Θίσβη, Βοιωτία, Ελλάδα, Οδός Placeholder 1</p> <!-- CHANGE HERE -->
+          <p><strong>Τηλέφωνο:</strong> <a href="tel:+302100000000">+30 210 0000000</a></p> <!-- CHANGE HERE -->
+          <p><strong>Email:</strong> <a href="mailto:info@example.gr">info@example.gr</a></p> <!-- CHANGE HERE -->
+          <p><strong>Ωράριο:</strong> Δευτέρα–Παρασκευή 07:00–17:00</p> <!-- CHANGE HERE -->
+          <p class="help">Για επείγουσες ανάγκες έργου, επικοινωνήστε τηλεφωνικά για ταχύτερη εξυπηρέτηση.</p>
+        </section>
+
+        <section id="quote">
+          <h2>Αίτημα Προσφοράς</h2>
+          <form id="quote-form" action="https://formspree.io/f/your-form-id" method="POST"> <!-- CHANGE HERE: Formspree endpoint -->
+            <div class="form-group">
+              <label for="fullname">Ονοματεπώνυμο / Εταιρεία</label>
+              <input id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Τηλέφωνο</label>
+              <input id="phone" name="phone" inputmode="tel" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-group">
+              <label for="product">Προϊόν</label>
+              <select id="product" name="product" required>
+                <option value="">Επιλέξτε</option>
+                <option>3A Οδοστρωσίας</option>
+                <option>Σκύρα</option>
+                <option>Χαλίκι</option>
+                <option>Γαρμπίλι</option>
+                <option>Άμμος</option>
+                <option>Άλλο</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Ποσότητα (τόνοι / m³)</label>
+              <input id="quantity" name="quantity" placeholder="π.χ. 120 τόνοι" required>
+            </div>
+            <div class="form-group">
+              <label for="location">Τόπος παράδοσης</label>
+              <input id="location" name="location" required>
+            </div>
+            <div class="form-group">
+              <label for="schedule">Χρονοδιάγραμμα</label>
+              <input id="schedule" name="schedule" placeholder="π.χ. εντός 2 ημερών">
+            </div>
+            <div class="form-group">
+              <label for="message">Μήνυμα</label>
+              <textarea id="message" name="message" placeholder="Περιγράψτε σύντομα το έργο ή την ανάγκη σας."></textarea>
+            </div>
+            <div class="form-group">
+              <label>
+                <input id="gdpr" type="checkbox" required>
+                Συναινώ στην επεξεργασία των στοιχείων μου για απάντηση στο αίτημά μου.
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Αποστολή Αιτήματος</button>
+            <p class="help">Εναλλακτικά, μπορείτε να στείλετε email στο <a href="mailto:info@example.gr?subject=Αίτημα%20Προσφοράς">info@example.gr</a> (mailto fallback).</p>
+          </form>
+        </section>
+      </div>
+
+      <section class="section" aria-labelledby="map-title">
+        <h2 id="map-title">Χάρτης</h2>
+        <p class="help">CHANGE HERE: ενημερώστε τα coordinates/URL του iframe με την ακριβή τοποθεσία εγκατάστασης.</p>
+        <iframe
+          title="Χάρτης τοποθεσίας Λατομείου Θίσβης"
+          src="https://www.google.com/maps?q=38.3288,23.1811&hl=el&z=11&output=embed"
+          width="100%"
+          height="320"
+          style="border:0; border-radius: 10px;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section><h3>Λατομείο Θίσβης</h3><p>Θίσβη, Βοιωτία, Ελλάδα</p><p>Οδός Placeholder 1</p></section>
+      <section><h3>Επικοινωνία</h3><p><a href="tel:+302100000000">+30 210 0000000</a></p><p><a href="mailto:info@example.gr">info@example.gr</a></p></section>
+      <section><h3>Σύνδεσμοι</h3><ul><li><a href="index.html">Αρχική</a></li><li><a href="products.html">Προϊόντα</a></li></ul></section>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Επιστροφή στην κορυφή">↑</button>
+
+  <!-- Προαιρετικό (cookie-free) analytics: Plausible snippet
+  <script defer data-domain="yourdomain.gr" src="https://plausible.io/js/script.js"></script>
+  -->
+</body>
+</html>
